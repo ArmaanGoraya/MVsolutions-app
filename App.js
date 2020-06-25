@@ -1,19 +1,48 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { Component } from "react";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
-  );
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { count: 0 };
+  }
+
+  onPress = () => {
+    this.setState({
+      
+    });
+  };
+
+  render() {
+    const { count } = this.state;
+    return (
+      <View style={styles.container}>
+        <View style={styles.countContainer}>
+        </View>
+        {/* <TouchableOpacity
+          style={styles.button}
+          //onPress={this.onPress}
+        >
+          <Text>Press Here</Text>
+        </TouchableOpacity> */}
+      </View>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: "center",
+    paddingHorizontal: 50
   },
+  button: {
+    alignItems: "center",
+    backgroundColor: "#cfcccc",
+    padding: 10
+  },
+  countContainer: {
+    alignItems: "center",
+    padding: 0
+  }
 });

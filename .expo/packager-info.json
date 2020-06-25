@@ -2,5 +2,8 @@
   "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 8669
+  "packagerPid": 8669,
+  "expoServerNgrokUrl": "https://ft-9z8.anonymous.mvsolutions-app.exp.direct",
+  "packagerNgrokUrl": "https://packager.ft-9z8.anonymous.mvsolutions-app.exp.direct",
+  "ngrokPid": 19687
 }
