@@ -19,12 +19,12 @@ export default class App extends Component {
       <View style={styles.container}>
         <View style={styles.countContainer}>
         </View>
-        {/* <TouchableOpacity
+        <TouchableOpacity
           style={styles.button}
           //onPress={this.onPress}
         >
           <Text>Press Here</Text>
-        </TouchableOpacity> */}
+        </TouchableOpacity>
       </View>
     );
   }
